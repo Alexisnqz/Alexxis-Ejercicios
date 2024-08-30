@@ -4,6 +4,8 @@
  */
 package ec.edu.intsuperior.vista;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Cristof Zzz
@@ -11,17 +13,17 @@ package ec.edu.intsuperior.vista;
 public class ejercicioos {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner (System.in);
 
-        // Pedir el primer número
+        
         System.out.println("Introduce el primer número:");
         int num1 = scanner.nextInt();
 
-        // Pedir el segundo número
+        
         System.out.println("Introduce el segundo número:");
         int num2 = scanner.nextInt();
 
-        // Comparar los dos números y decir cuál es el mayor
+        
         if (num1 > num2) {
             System.out.println("El número mayor es: " + num1);
         } else if (num2 > num1) {
@@ -32,20 +34,20 @@ public class ejercicioos {
     }
 }
 
-public class Main {
+public class ejercicioos {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Pedir el primer número
+        
         System.out.println("Introduce el primer número:");
         int num1 = scanner.nextInt();
 
-        // Pedir el segundo número
+        
         System.out.println("Introduce el segundo número:");
         int num2 = scanner.nextInt();
 
-        // Comparar los dos números y decir cuál es el mayor o si son iguales
+        
         if (num1 > num2) {
             System.out.println("El número mayor es: " + num1);
         } else if (num2 > num1) {
@@ -56,12 +58,12 @@ public class Main {
     }
 }
 
-public class Main {
+public class ejercicioos {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Pedir tres números
+        
         System.out.println("Introduce el primer número:");
         Integer num1 = scanner.nextInt();
         System.out.println("Introduce el segundo número:");
@@ -69,13 +71,13 @@ public class Main {
         System.out.println("Introduce el tercer número:");
         Integer num3 = scanner.nextInt();
 
-        // Guardar los números en un array
+        
         Integer[] numbers = {num1, num2, num3};
 
-        // Ordenarlos de mayor a menor
+       
         Arrays.sort(numbers, Collections.reverseOrder());
 
-        // Mostrar los números ordenados
+        
         System.out.println("Números ordenados de mayor a menor:");
         for (int num : numbers) {
             System.out.println(num);
@@ -83,18 +85,18 @@ public class Main {
     }
 }
 
-public class Main {
+public class ejercicioos {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Pedir un número entre 0 y 9999
+        
         System.out.println("Introduce un número entre 0 y 9999:");
         int num = scanner.nextInt();
 
-        // Verificar si el número está en el rango permitido
+        
         if (num >= 0 && num <= 9999) {
-            // Contar el número de cifras
+            
             int cifras = String.valueOf(num).length();
             System.out.println("El número tiene " + cifras + " cifras.");
         } else {
@@ -103,16 +105,16 @@ public class Main {
     }
 }
 
-public class Main {
+public class ejercicioos {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Pedir una nota entre 0 y 10
+        
         System.out.println("Introduce una nota entre 0 y 10:");
         float nota = scanner.nextFloat();
 
-        // Clasificar la nota
+        
         if (nota >= 0 && nota < 5) {
             System.out.println("Insuficiente");
         } else if (nota >= 5 && nota < 6) {
@@ -129,24 +131,24 @@ public class Main {
     }
 }
 
-public class Main {
+public class ejercicioos {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner (System.in);
 
-        // Pedir el día
+       
         System.out.println("Introduce el día:");
         int dia = scanner.nextInt();
 
-        // Pedir el mes
+        
         System.out.println("Introduce el mes:");
         int mes = scanner.nextInt();
 
-        // Pedir el año
+        
         System.out.println("Introduce el año:");
         int año = scanner.nextInt();
 
-        // Verificar si la fecha es válida
+        
         if ((dia >= 1 && dia <= 30) && (mes >= 1 && mes <= 12) && (año > 0)) {
             System.out.println("La fecha es correcta: " + dia + "/" + mes + "/" + año);
         } else {
@@ -155,44 +157,44 @@ public class Main {
     }
 }
 
-public class Main {
+public class ejercicioos {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Pedir el día
+        
         System.out.println("Introduce el día:");
         int dia = scanner.nextInt();
 
-        // Pedir el mes
+        
         System.out.println("Introduce el mes:");
         int mes = scanner.nextInt();
 
-        // Pedir el año
+        
         System.out.println("Introduce el año:");
         int año = scanner.nextInt();
 
-        // Verificar si la fecha es válida
+        
         boolean fechaValida = false;
 
-        // Validar meses con 31 días
+        
         if (mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 8 || mes == 10 || mes == 12) {
             if (dia >= 1 && dia <= 31) {
                 fechaValida = true;
             }
-        } // Validar meses con 30 días
+        } 
         else if (mes == 4 || mes == 6 || mes == 9 || mes == 11) {
             if (dia >= 1 && dia <= 30) {
                 fechaValida = true;
             }
-        } // Validar febrero con 28 días (sin años bisiestos)
+        } 
         else if (mes == 2) {
             if (dia >= 1 && dia <= 28) {
                 fechaValida = true;
             }
         }
 
-        // Verificar si el año es positivo
+        
         if (fechaValida && año > 0) {
             System.out.println("La fecha es correcta: " + dia + "/" + mes + "/" + año);
         } else {
@@ -201,29 +203,29 @@ public class Main {
     }
 }
 
-public class Main {
+public class ejercicioos {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Pedir la hora
+        
         System.out.println("Introduce la hora (0-23):");
         int hora = scanner.nextInt();
 
-        // Pedir los minutos
+        
         System.out.println("Introduce los minutos (0-59):");
         int minutos = scanner.nextInt();
 
-        // Pedir los segundos
+        
         System.out.println("Introduce los segundos (0-59):");
         int segundos = scanner.nextInt();
 
-        // Verificar si la hora es válida
+        
         if ((hora >= 0 && hora < 24) && (minutos >= 0 && minutos < 60) && (segundos >= 0 && segundos < 60)) {
-            // Calcular el segundo siguiente
+            
             segundos++;
 
-            // Ajustar los minutos y la hora si es necesario
+            
             if (segundos == 60) {
                 segundos = 0;
                 minutos++;
@@ -236,7 +238,7 @@ public class Main {
                 }
             }
 
-            // Mostrar la hora en el segundo siguiente
+            
             System.out.println("La hora en el segundo siguiente es: " + hora + ":" + minutos + ":" + segundos);
         } else {
             System.out.println("La hora ingresada no es válida.");
@@ -244,34 +246,34 @@ public class Main {
     }
 }
 
-public class Main {
+public class ejercicioos {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int numero;
 
-        // Bucle para leer números y mostrar su cuadrado
+        
         do {
-            // Pedir un número
+            
             System.out.println("Introduce un número (un número negativo para salir):");
             numero = scanner.nextInt();
 
-            // Verificar si el número es negativo
+            
             if (numero >= 0) {
-                // Calcular el cuadrado del número
+                
                 int cuadrado = numero * numero;
-                // Mostrar el cuadrado
+                
                 System.out.println("El cuadrado de " + numero + " es " + cuadrado);
             } else {
-                // Mensaje de salida
+                
                 System.out.println("Número negativo introducido. Saliendo...");
             }
 
-        } while (numero >= 0); // Repetir hasta que se introduzca un número negativo
+        } while (numero >= 0); 
     }
 }
 
-public class Sueldos {
+public class ejercicioos {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -279,7 +281,7 @@ public class Sueldos {
         double suma = 0;
         int mayoresDe1000 = 0;
 
-        // Pedir 10 sueldos
+        
         for (int i = 0; i < sueldos.length; i++) {
             System.out.print("Introduce el sueldo " + (i + 1) + ": ");
             sueldos[i] = scanner.nextDouble();
@@ -289,27 +291,27 @@ public class Sueldos {
             }
         }
 
-        // Mostrar la suma total
+        
         System.out.println("La suma total de los sueldos es: " + suma);
 
-        // Mostrar cuántos sueldos son mayores de 1000 €
+        
         System.out.println("Número de sueldos mayores de 1000 €: " + mayoresDe1000);
     }
 }
 
-public class TablaMultiplicar {
+public class ejercicioos {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int numero;
 
-        // Pedir un número entre 0 y 10
+        
         do {
             System.out.print("Introduce un número entre 0 y 10: ");
             numero = scanner.nextInt();
         } while (numero < 0 || numero > 10);
 
-        // Mostrar la tabla de multiplicar del número
+        
         System.out.println("Tabla de multiplicar del " + numero + ":");
         for (int i = 1; i <= 10; i++) {
             System.out.println(numero + " x " + i + " = " + (numero * i));
@@ -317,7 +319,7 @@ public class TablaMultiplicar {
     }
 }
 
-public class NotasAlumnos {
+public class ejercicioos {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -326,14 +328,14 @@ public class NotasAlumnos {
         int condicionados = 0;
         int suspensos = 0;
 
-        // Pedir 6 notas
+        
         for (int i = 0; i < notas.length; i++) {
             do {
                 System.out.print("Introduce la nota del alumno " + (i + 1) + " (0-10): ");
                 notas[i] = scanner.nextInt();
             } while (notas[i] < 0 || notas[i] > 10);
 
-            // Contar el tipo de resultado
+            
             if (notas[i] >= 5) {
                 aprobados++;
             } else if (notas[i] == 4) {
@@ -343,7 +345,7 @@ public class NotasAlumnos {
             }
         }
 
-        // Mostrar los resultados
+        
         System.out.println("Número de alumnos aprobados: " + aprobados);
         System.out.println("Número de alumnos condicionados (nota 4): " + condicionados);
         System.out.println("Número de alumnos suspensos: " + suspensos);
